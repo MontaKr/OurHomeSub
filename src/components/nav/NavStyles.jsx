@@ -7,7 +7,25 @@ import Transport from "../../assets/ico_delivery_pc.gif"
 export const Wrap = styled.div`
   width: 100vw;
   height: 159px;
-  background-color: tomato;
+  /* background-color: tomato; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateY(-100%); 
+
+  &.visible {
+    transform: translateY(0); 
+    position: fixed; 
+    width: 100vw;
+    height: 159px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    /* background-color: tomato; */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
 
   .top {
     position: relative;
@@ -26,6 +44,7 @@ export const Wrap = styled.div`
         /* background-color: salmon; */
         width: 20%;
         height: 100%;
+        cursor: pointer;
         
         img {
           width: 100%;
@@ -97,6 +116,7 @@ export const Wrap = styled.div`
             background-repeat: no-repeat;
             width: 60px;
             height: 40px;
+            cursor: pointer;
 
             &::after {
               content: "";
@@ -107,6 +127,24 @@ export const Wrap = styled.div`
               width: 1px;
               height: 20px;
               background-color: #e6e6e6;
+            }
+
+            sup {
+              position: absolute;
+              top: 0;
+              right: 10px;
+              text-indent: 0;
+              min-width: 18px;
+              height: 18px;
+              padding: 0 2px;
+              color: #fff;
+              font-size: 12px;
+              line-height: 18px;
+              font-weight: 500;
+              letter-spacing: 0;
+              text-align: center;
+              border-radius: 9px;
+              background: #ff6500;
             }
           }
 

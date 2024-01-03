@@ -1,0 +1,62 @@
+[
+  {
+      "name": "진한 사골곰탕 300g",
+      "content": "100% 사골로 고은 진한 사골곰탕",
+      "price": "1590",
+      "originalPrice": "1750",
+      "bargain": "10",
+      "url": "https://mall.ourhome.co.kr//attach_file/20201118/C4A1610E7468407FA935CBF8DE2164DF.jpg"
+  },
+  {
+      "name": "소불고기볶음밥 230g",
+      "content": "소불고기, 간장베이스, 간편조리",
+      "price": "1960",
+      "originalPrice": "2070",
+      "bargain": "5",
+      "url": "https://mall.ourhome.co.kr//attach_file/20220930/ECF4934776D942C3B3296F2BFD61E3CF.jpg"
+  },
+  {
+      "name": "[구씨반가] 전복 소갈비탕 600g",
+      "content": "진주명문가 구씨가문의 전통을 담은 전복 소갈비탕",
+      "price": "9580",
+      "originalPrice": "11980",
+      "bargain": "20",
+      "url": "https://mall.ourhome.co.kr//attach_file/20231226/B4CCDFBCFB884CB0A96E45AEA6EBAD40.jpg"
+  },
+  {
+      "name": "지리산수 무라벨(2.0L*6병)*4팩=총24병",
+      "content": "천연 미네랄 알칼리워터",
+      "price": "18760",
+      "originalPrice": "28800",
+      "bargain": "35%",
+      "url": "https://mall.ourhome.co.kr//attach_file/20220215/2C649D824A0245D88A3DE4298B9424A7.jpg"
+  },
+  {
+      "name": "[온더고] 전주식 소고기 오색비빔밥 310g",
+      "content": "오색 가득 토핑 듬뿍, 소고기, 한국의 맛",
+      "price": "5980",
+      "url": "https://mall.ourhome.co.kr//attach_file/20230801/93CE10E54C6E49D1AD21BE99B8956BCC.jpg"
+  },
+  {
+      "name": "[온더고] 중화식 첨면장 불향 덮밥 290g",
+      "content": "첨면장, 짜장, 계란 후라이, 고추 잡채, 중화식",
+      "price": "6480",
+      "url": "https://mall.ourhome.co.kr//attach_file/20231101/5757B7683B3C42FB9F4280ACBD7E1485.jpg"
+  },
+  {
+      "name": "치킨데리야끼볶음밥 250g",
+      "content": "단짠단짠, 닭가슴살, 간편조리",
+      "price": "1800",
+      "originalPrice": "1890",
+      "bargain": "5",
+      "url": "https://mall.ourhome.co.kr//attach_file/20210517/43497B534BE247B1BA9B5AEC2524B966.jpg"
+  },
+  {
+    "name": "김치철판볶음밥 250g",
+    "content": "국내산 김치, 가마솥 직화, 간편조리",
+    "price": "1790",
+    "originalPrice": "1890",
+    "bargain": "5",
+    "url": "https://mall.ourhome.co.kr//attach_file/20210517/0C9D86016AAF4F1B829CDEF4462FFA9B.jpg"
+  }
+]

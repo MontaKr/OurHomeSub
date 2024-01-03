@@ -6,4 +6,6 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 `
 
-export const MainContainer = styled.div``
+export const MainContainer = styled.div`
+  overflow-x: hidden;
+`

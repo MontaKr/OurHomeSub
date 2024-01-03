@@ -1,14 +1,53 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Wrap } from './NavStyles'
 import Logo from "../../assets/logo_ourhome.png"
 import PickUp from "../../assets/pickupOHTOGO_BI_pc.png"
+import { useNavigate } from 'react-router-dom';
+import { useStore } from '../../store/index';
 
 const Nav = () => {
+
+  const cartItems = useStore(state => state.cartItems);
+
+  const navRef = useRef(null); 
+  const navigate = useNavigate();
+  const [isVisible, setIsVisible] = useState(true);
+  let lastScrollY = window.scrollY;
+
+  // Navigating
+  const goToCart = () => {
+    navigate('/cart');
+  };
+
+  const goToMain = () => {
+    navigate('/');
+  };
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY && isVisible) {
+      // Scroll Down
+      setIsVisible(false);
+    } else if (currentScrollY < lastScrollY && !isVisible) {
+      // Scroll Up
+      setIsVisible(true);
+    }
+    lastScrollY = currentScrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isVisible]); 
+
   return (
-    <Wrap>
+    <Wrap className={isVisible ? 'visible' : ''} ref={navRef}>
       <div className="top">
         <div className="top__container">
-          <div className="top__left">
+          <div className="top__left" onClick={goToMain}>
             <img src={Logo} alt="logo" />
           </div>
           <div className="top__middle">
@@ -19,7 +58,11 @@ const Nav = () => {
           </div>
           <div className="top__right">
             <div className="top__right__wrap">
-              <div className="top__right__wrap__cart"></div>
+              <div className="top__right__wrap__cart" onClick={goToCart}>
+                <sup>
+                  {cartItems.length}
+                </sup>
+              </div>
               <div className="top__right__wrap__delivery"></div>
             </div>
           </div>
